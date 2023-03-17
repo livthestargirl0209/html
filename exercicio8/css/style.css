@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+/*Estilodo body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.anotacao{
+    background-color: rgb(163, 208, 200);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.cabecalho{
+    padding: 60px;
+    text-align: center;
+    background-image: url(../imagens/notebook.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+/*Estilo da barra de navegação*/
+.barra_nav{
+    display: flex;
+    background-color: rgb(178, 243, 229);
+}
+.barra_nav a{
+    color: white;
+    padding: 14px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+/*trocar cor de fundo quando o cursos estiver sobre o link*/
+.barra_nav a:hover{
+    background-color: white;
+    color: rgb(254, 176, 249);
+}
+/*configurar a div coluna*/
+.coluna{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Criar 2 colunas desiguias 30% e 70%)*/
+.lateral {
+    flex: 30%;
+    background-color: rgb(255, 210, 242);
+    padding: 20px;
+}
+.principal{
+    flex: 70%;
+    background-color: rgb(253, 233, 252);
+    padding: 20px;
+}
+/*Imagens falsas apenas para marcação do espaço*/
+.imagem_falsa{
+    background-color: rgb(255, 240, 255);
+    width:100%; 
+    padding: 20px;
+    height: 200px;
+}
+.imagem_falsa2{
+    background-color: rgb(255, 235, 255);
+    width:100%; 
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.imagem_falsa3{
+    background-color: rgb(254, 208, 243);
+    width:100%; 
+    padding: 20px;
+    height: 200px;
+}
+.rodape{
+    max-height: fit-content;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(159, 206, 204);
+}
+@media screen and (max-width: 500px) {
+    .coluna, .barra_nav{
+        flex-direction: column;
+    }  
+    .cabecalho{
+        background-image: url(../imagens/celular.jpg);
+        background-size: cover;
+        color: white;
+    } 
+}
